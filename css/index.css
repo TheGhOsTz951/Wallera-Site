@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: hsla(23, 92%, 71%, 1);
+    background: linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(23, 92%, 71%, 1) 0%, hsla(345, 43%, 54%, 1) 100%);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.title hr {
+    border: 1px solid white;
+}
+
+.banner {
+    margin: 5px 0;
+    position: relative;
+    left: 100%;
+    max-width: 500px;
+    animation-name: moving-banner;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.div-schede {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-schede .scheda { 
+    margin: 10px auto 50px;
+    box-shadow: 0pt 4pt 31pt -5pt #3F3F40;
+    border-radius: 15px;
+    max-width: 640px;
+    height: 800px;
+    transition: all .3s ease;
+}
+
+.div-schede .scheda:hover {
+    box-shadow: 0pt 4pt 31pt 2pt #3F3F40;
+}
+
+.scheda-fronte {
+    margin: 0;
+}
+
+.scheda-fronte h2 {
+    font-size: 28px;
+}
+
+.scheda-fronte p {
+    font-size: 26px;
+}
+
+.scheda-dietro {
+    display: none;
+}
+
+.div-schede img {
+    width: 50%;
+}
+
+@keyframes moving-banner {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -25%;
+    }
+}
